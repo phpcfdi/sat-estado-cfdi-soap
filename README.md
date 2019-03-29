@@ -14,10 +14,10 @@
 
 :mexico: La documentación del proyecto está en español porque ese es el lenguaje principal de los usuarios.
 
-Esta librería contiene objetos para consumir el **Servicio de Consulta de CFDI del SAT**.
+Esta librería contiene objetos para consumir el **Servicio de Consulta de CFDI del SAT** usando SOAP.
 
-Esta librería provee un cliente que puede ser usado en [`phpcfdi/sat-estado-cfdi`](https://github.com/phpcfdi/sat-estado-cfdi)
-implementación de la clase `PhpCfdi\SatEstadoCfdi\Contracts\ConsumerClientInterface`.
+Esta librería provee un objeto **`SoapConsumerClient`** que se usa en `\PhpCfdi\SatEstadoCfdi\Consumer`
+de la librería [`phpcfdi/sat-estado-cfdi`](https://github.com/phpcfdi/sat-estado-cfdi).
 
 La implementación utiliza SOAP de PHP (ext-soap) y configura el cliente y la llamada para no usar
 el archivo WSDL porque el servicio del SAT ya no lo ofrece.
@@ -30,6 +30,7 @@ Usa [composer](https://getcomposer.org/)
 ```shell
 composer require phpcfdi/sat-estado-cfdi-soap
 ```
+
 
 ## Ejemplo básico de uso
 
@@ -50,6 +51,7 @@ if ($response->cancellable()->isNotCancellable()) {
 }
 ```
 
+
 ### Opciones de construcción
 
 La clase `\SoapClient` de PHP ofrece muchas opciones para su construcción que puedes consultar en
@@ -60,7 +62,7 @@ podrás modificar algunos aspectos de la creación de `\SoapClient` que se usa d
 
 Los **parámetros que no puedes modificar** son: `location`, `uri`, `style`, `use` y `soap_version`.
 
-Por default los objetos se crean con los parámetros modificables `exceptions: true` y `connection_timeout: 5`.
+Por omisión los objetos se crean con los parámetros modificables `exceptions: true` y `connection_timeout: 10`.
 
 Para crear un objeto `\SoapClient` con tus parámetros debes entonces utilizar su el `SoapClientFactory`, por ejemplo:
 
@@ -81,6 +83,7 @@ $client = new SoapConsumerClient($factory);
 // cremaos el consumidor del servicio para poder hacer las consultas
 $consumer = new Consumer($client);
 ```
+
 
 ## Compatilibilidad
 
