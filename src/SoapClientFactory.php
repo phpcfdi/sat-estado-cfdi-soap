@@ -27,7 +27,7 @@ class SoapClientFactory
 
     public const DEFAULT_OPTIONS = [
         'exceptions' => true, // throw exceptions on errors
-        'connection_timeout' => 5, // 5 seconds for timeout
+        'connection_timeout' => 10, // 10 seconds for timeout
     ];
 
     private $customSoapOptions;
