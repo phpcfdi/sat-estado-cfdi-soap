@@ -21,7 +21,7 @@
     "require": {
         "php": ">=7.2",
         "ext-soap": "*",
-        "phpcfdi/sat-estado-cfdi": "^0.6.0"
+        "phpcfdi/sat-estado-cfdi": "^0.6.1|^0.7.0"
     },
     "require-dev": {
         "phpcfdi/cfdi-expresiones": "^2.0",
