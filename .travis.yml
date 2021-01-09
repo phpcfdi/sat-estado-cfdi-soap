@@ -16,10 +16,10 @@ cache:
 before_script:
   - travis_retry composer install --no-interaction --prefer-dist
   - phpenv config-rm xdebug.ini
-  - mkdir -p build
+  - travis_retry composer upgrade --prefer-dist --no-interaction --no-progress
 
 script:
-  - vendor/bin/phplint
+  - vendor/bin/php-cs-fixer fix --dry-run --verbose
   - vendor/bin/php-cs-fixer fix --verbose
   - vendor/bin/phpcbf --colors -sp src/ tests/
   - vendor/bin/phpunit --testdox --verbose
