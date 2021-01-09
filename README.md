@@ -88,7 +88,7 @@ $consumer = new Consumer($client);
 ## Compatilibilidad
 
 Esta librería se mantendrá compatible con al menos la versión con
-[soporte activo de PHP](http://php.net/supported-versions.php) más reciente.
+[soporte activo de PHP](https://www.php.net/supported-versions.php) más reciente.
 
 También utilizamos [Versionado Semántico 2.0.0](https://semver.org/lang/es/) por lo que puedes usar esta librería
 sin temor a romper tu aplicación.
@@ -102,7 +102,7 @@ y recuerda revisar el archivo de tareas pendientes [TODO][] y el [CHANGELOG][].
 
 ## Copyright and License
 
-The phpcfdi/sat-estado-cfdi library is copyright © [Carlos C Soto](http://eclipxe.com.mx/)
+The `phpcfdi/sat-estado-cfdi-soap` library is copyright © [PhpCfdi](https://www.phpcfdi.com/)
 and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
 
 
@@ -113,15 +113,15 @@ and licensed for use under the MIT License (MIT). Please see [LICENSE][] for mor
 [source]: https://github.com/phpcfdi/sat-estado-cfdi-soap
 [release]: https://github.com/phpcfdi/sat-estado-cfdi-soap/releases
 [license]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/master/LICENSE
-[build]: https://travis-ci.org/phpcfdi/sat-estado-cfdi-soap?branch=master
+[build]: https://travis-ci.com/phpcfdi/sat-estado-cfdi-soap?branch=master
 [quality]: https://scrutinizer-ci.com/g/phpcfdi/sat-estado-cfdi-soap/
 [coverage]: https://scrutinizer-ci.com/g/phpcfdi/sat-estado-cfdi-soap/code-structure/master/code-coverage
 [downloads]: https://packagist.org/packages/phpcfdi/sat-estado-cfdi-soap
 
-[badge-source]: http://img.shields.io/badge/source-phpcfdi/sat--estado--cfdi--soap-blue.svg?style=flat-square
+[badge-source]: https://img.shields.io/badge/source-phpcfdi/sat--estado--cfdi--soap-blue.svg?style=flat-square
 [badge-release]: https://img.shields.io/github/release/phpcfdi/sat-estado-cfdi-soap.svg?style=flat-square
-[badge-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[badge-build]: https://img.shields.io/travis/phpcfdi/sat-estado-cfdi-soap/master.svg?style=flat-square
+[badge-license]: https://img.shields.io/github/license/phpcfdi/sat-estado-cfdi-soap.svg?style=flat-square
+[badge-build]: https://img.shields.io/travis/com/phpcfdi/sat-estado-cfdi-soap/master.svg?style=flat-square
 [badge-quality]: https://img.shields.io/scrutinizer/g/phpcfdi/sat-estado-cfdi-soap/master.svg?style=flat-square
 [badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/phpcfdi/sat-estado-cfdi-soap/master.svg?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/phpcfdi/sat-estado-cfdi-soap.svg?style=flat-square
