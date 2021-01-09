@@ -13,17 +13,17 @@ class SpySoapConsumerClient extends SoapConsumerClient
     /** @var SoapClient */
     public $lastSoapClient;
 
-    /** @var array */
+    /** @var mixed[] */
     public $lastArguments;
 
-    /** @var array */
+    /** @var array<string, mixed> */
     public $lastOptions;
 
-    /** @var stdClass|array|false */
+    /** @var stdClass|mixed[]|false */
     public $callConsultaReturn;
 
     /**
-     * @param stdClass|array|false $callConsultaReturn
+     * @param stdClass|mixed[]|false $callConsultaReturn
      */
     public function __construct($callConsultaReturn)
     {
