@@ -51,6 +51,7 @@ class SoapClientFactoryTest extends TestCase
     public function testCreateCallsCreateSoapClientWithOptionsUsingFinalOptions(): void
     {
         $factory = new class() extends SoapClientFactory {
+            /** @var array<string, mixed> */
             public $spyOptions;
 
             protected function createSoapClientWithOptions(array $options): SoapClient

@@ -61,9 +61,9 @@ class SoapConsumerClient implements ConsumerClientInterface
      * This method is abstracted here to be able to mock responses in tests.
      *
      * @param SoapClient $soapClient
-     * @param array $arguments
-     * @param array $options
-     * @return stdClass|array|false
+     * @param mixed[] $arguments
+     * @param array<string, mixed> $options
+     * @return stdClass|mixed[]|false
      */
     protected function callConsulta(SoapClient $soapClient, array $arguments, array $options)
     {

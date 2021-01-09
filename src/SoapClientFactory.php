@@ -30,18 +30,30 @@ class SoapClientFactory
         'connection_timeout' => 10, // 10 seconds for timeout
     ];
 
+    /** @var array<string, mixed> */
     private $customSoapOptions;
 
+    /**
+     * SoapClientFactory constructor.
+     * @param array<string, mixed> $customSoapOptions
+     */
     public function __construct(array $customSoapOptions = [])
     {
         $this->customSoapOptions = $customSoapOptions;
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function customSoapOptions(): array
     {
         return $this->customSoapOptions;
     }
 
+    /**
+     * @param string $serviceLocation
+     * @return array<string, mixed>
+     */
     public function finalSoapOptions(string $serviceLocation): array
     {
         return array_merge(
@@ -62,7 +74,7 @@ class SoapClientFactory
     /**
      * Override this method to build your own SoapClient
      *
-     * @param array $options
+     * @param array<string, mixed> $options
      * @return SoapClient
      */
     protected function createSoapClientWithOptions(array $options): SoapClient
