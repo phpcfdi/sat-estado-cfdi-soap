@@ -31,6 +31,7 @@ class SpySoapConsumerClient extends SoapConsumerClient
         $this->callConsultaReturn = $callConsultaReturn;
     }
 
+    /** @noinspection PhpMissingParentCallCommonInspection */
     protected function callConsulta(SoapClient $soapClient, array $arguments, array $options)
     {
         $this->lastSoapClient = $soapClient;
