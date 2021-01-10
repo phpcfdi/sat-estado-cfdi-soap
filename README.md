@@ -22,7 +22,6 @@ de la librería [`phpcfdi/sat-estado-cfdi`](https://github.com/phpcfdi/sat-estad
 La implementación utiliza SOAP de PHP (ext-soap) y configura el cliente y la llamada para no usar
 el archivo WSDL porque el servicio del SAT ya no lo ofrece.
 
-
 ## Instalación
 
 Usa [composer](https://getcomposer.org/)
@@ -31,16 +30,20 @@ Usa [composer](https://getcomposer.org/)
 composer require phpcfdi/sat-estado-cfdi-soap
 ```
 
-
 ## Ejemplo básico de uso
 
 ```php
 <?php
+declare(strict_types=1);
+
+use PhpCfdi\SatEstadoCfdi\Consumer;
+use PhpCfdi\SatEstadoCfdi\Soap\SoapConsumerClient;
+
 // crear la instancia básica del Cliente Soap para el consumidor
-$client = new \PhpCfdi\SatEstadoCfdi\Soap\SoapConsumerClient();
+$client = new SoapConsumerClient();
 
 // creamos el consumidor con nuestro cliente
-$consumer = new \PhpCfdi\SatEstadoCfdi\Consumer($client);
+$consumer = new Consumer($client);
 
 // consumimos el webservice!
 $response = $consumer->execute('...expression');
@@ -50,7 +53,6 @@ if ($response->cancellable()->isNotCancellable()) {
     echo 'CFDI no es cancelable';
 }
 ```
-
 
 ### Opciones de construcción
 
@@ -64,10 +66,12 @@ Los **parámetros que no puedes modificar** son: `location`, `uri`, `style`, `us
 
 Por omisión los objetos se crean con los parámetros modificables `exceptions: true` y `connection_timeout: 10`.
 
-Para crear un objeto `\SoapClient` con tus parámetros debes entonces utilizar su el `SoapClientFactory`, por ejemplo:
+Para crear un objeto `\SoapClient` con tus parámetros debes entonces utilizar la clase `SoapClientFactory`, por ejemplo:
 
 ```php
 <?php
+declare(strict_types=1);
+
 use PhpCfdi\SatEstadoCfdi\Soap\SoapConsumerClient;
 use PhpCfdi\SatEstadoCfdi\Soap\SoapClientFactory;
 use PhpCfdi\SatEstadoCfdi\Consumer;
@@ -80,31 +84,27 @@ $factory = new SoapClientFactory([
 // le pasamos la fábrical al cliente
 $client = new SoapConsumerClient($factory);
 
-// cremaos el consumidor del servicio para poder hacer las consultas
+// creamos el consumidor del servicio para poder hacer las consultas
 $consumer = new Consumer($client);
 ```
-
 
 ## Compatilibilidad
 
 Esta librería se mantendrá compatible con al menos la versión con
 [soporte activo de PHP](https://www.php.net/supported-versions.php) más reciente.
 
-También utilizamos [Versionado Semántico 2.0.0](https://semver.org/lang/es/) por lo que puedes usar esta librería
+También utilizamos [Versionado Semántico 2.0.0](docs/SEMVER.md) por lo que puedes usar esta librería
 sin temor a romper tu aplicación.
-
 
 ## Contribuciones
 
 Las contribuciones con bienvenidas. Por favor lee [CONTRIBUTING][] para más detalles
-y recuerda revisar el archivo de tareas pendientes [TODO][] y el [CHANGELOG][].
-
+y recuerda revisar el archivo de tareas pendientes [TODO][] y el archivo [CHANGELOG][].
 
 ## Copyright and License
 
 The `phpcfdi/sat-estado-cfdi-soap` library is copyright © [PhpCfdi](https://www.phpcfdi.com/)
 and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
-
 
 [contributing]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/master/CONTRIBUTING.md
 [changelog]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/master/docs/CHANGELOG.md
