@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace PhpCfdi\SatEstadoCfdi\Tests\Soap\Unit;
 
+use SoapClient;
+use PHPUnit\Framework\MockObject\MockObject;
+use PhpCfdi\SatEstadoCfdi\Tests\Soap\TestCase;
 use PhpCfdi\SatEstadoCfdi\Soap\SoapClientFactory;
 use PhpCfdi\SatEstadoCfdi\Soap\SoapConsumerClient;
 use PhpCfdi\SatEstadoCfdi\Tests\Soap\SpySoapConsumerClient;
-use PhpCfdi\SatEstadoCfdi\Tests\Soap\TestCase;
 
 class SoapConsumerClientTest extends TestCase
 {
@@ -49,5 +51,26 @@ class SoapConsumerClientTest extends TestCase
 
         $response = $client->consume('serviceUri', 'expression');
         $this->assertSame('X - dummy!', $response->get('EstadoConsulta'));
+    }
+
+    public function testMethodCallConsulta(): void
+    {
+        $client = new class () extends SoapConsumerClient {
+            public function callConsulta(SoapClient $soapClient, array $arguments, array $options) // phpcs:ignore
+            {
+                return parent::callConsulta($soapClient, $arguments, $options);
+            }
+        };
+        $fakeResult = (object) ['result' => 'ok'];
+        $arguments = [];
+        $options = [];
+        /** @var SoapClient&MockObject $soapClient */
+        $soapClient = $this->createMock(SoapClient::class);
+        $soapClient->expects($this->once())
+            ->method('__soapCall')
+            ->with('Consulta', $arguments, $options, null, null)
+            ->willReturn($fakeResult);
+        $value = $client->callConsulta($soapClient, $arguments, $options);
+        $this->assertSame($fakeResult, $value);
     }
 }

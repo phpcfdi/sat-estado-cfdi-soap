@@ -50,8 +50,11 @@ class SoapConsumerClient implements ConsumerClientInterface
             $data = new stdClass();
         }
         $clientResponse = new ConsumerClientResponse();
+        /** @psalm-var mixed $value */
         foreach (get_object_vars($data) as $key => $value) {
-            $clientResponse->set(strval($key), strval($value));
+            if (is_scalar($value)) {
+                $clientResponse->set(strval($key), strval($value));
+            }
         }
 
         return $clientResponse;
@@ -67,6 +70,8 @@ class SoapConsumerClient implements ConsumerClientInterface
      */
     protected function callConsulta(SoapClient $soapClient, array $arguments, array $options)
     {
-        return $soapClient->__soapCall('Consulta', $arguments, $options);
+        /** @var stdClass|mixed[]|false $return */
+        $return = $soapClient->__soapCall('Consulta', $arguments, $options);
+        return $return;
     }
 }
