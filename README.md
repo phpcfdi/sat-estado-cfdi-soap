@@ -10,7 +10,7 @@
 
 > Consulta el estado de un CFDI en el webservice del SAT usando SOAP (sin WSDL)
 
-:us: The documentation of this project is in spanish as this is the natural language for intented audience.
+:us: The documentation of this project is in spanish as this is the natural language for intended audience.
 
 :mexico: La documentación del proyecto está en español porque ese es el lenguaje principal de los usuarios.
 
@@ -88,7 +88,7 @@ $client = new SoapConsumerClient($factory);
 $consumer = new Consumer($client);
 ```
 
-## Compatilibilidad
+## Compatibilidad
 
 Esta librería se mantendrá compatible con al menos la versión con
 [soporte activo de PHP](https://www.php.net/supported-versions.php) más reciente.
@@ -106,22 +106,22 @@ y recuerda revisar el archivo de tareas pendientes [TODO][] y el archivo [CHANGE
 The `phpcfdi/sat-estado-cfdi-soap` library is copyright © [PhpCfdi](https://www.phpcfdi.com/)
 and licensed for use under the MIT License (MIT). Please see [LICENSE][] for more information.
 
-[contributing]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/master/CONTRIBUTING.md
-[changelog]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/master/docs/CHANGELOG.md
-[todo]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/master/docs/TODO.md
+[contributing]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/main/CONTRIBUTING.md
+[changelog]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/main/docs/CHANGELOG.md
+[todo]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/main/docs/TODO.md
 
 [source]: https://github.com/phpcfdi/sat-estado-cfdi-soap
 [release]: https://github.com/phpcfdi/sat-estado-cfdi-soap/releases
-[license]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/master/LICENSE
-[build]: https://travis-ci.com/phpcfdi/sat-estado-cfdi-soap?branch=master
+[license]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/main/LICENSE
+[build]: https://github.com/phpcfdi/sat-estado-cfdi-soap/actions/workflows/build.yml?query=branch:main
 [quality]: https://scrutinizer-ci.com/g/phpcfdi/sat-estado-cfdi-soap/
-[coverage]: https://scrutinizer-ci.com/g/phpcfdi/sat-estado-cfdi-soap/code-structure/master/code-coverage
+[coverage]: https://scrutinizer-ci.com/g/phpcfdi/sat-estado-cfdi-soap/code-structure/main/code-coverage
 [downloads]: https://packagist.org/packages/phpcfdi/sat-estado-cfdi-soap
 
-[badge-source]: https://img.shields.io/badge/source-phpcfdi/sat--estado--cfdi--soap-blue.svg?style=flat-square
-[badge-release]: https://img.shields.io/github/release/phpcfdi/sat-estado-cfdi-soap.svg?style=flat-square
-[badge-license]: https://img.shields.io/github/license/phpcfdi/sat-estado-cfdi-soap.svg?style=flat-square
-[badge-build]: https://img.shields.io/travis/com/phpcfdi/sat-estado-cfdi-soap/master.svg?style=flat-square
-[badge-quality]: https://img.shields.io/scrutinizer/g/phpcfdi/sat-estado-cfdi-soap/master.svg?style=flat-square
-[badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/phpcfdi/sat-estado-cfdi-soap/master.svg?style=flat-square
-[badge-downloads]: https://img.shields.io/packagist/dt/phpcfdi/sat-estado-cfdi-soap.svg?style=flat-square
+[badge-source]: https://img.shields.io/badge/source-phpcfdi/sat--estado--cfdi--soap-blue?style=flat-square
+[badge-release]: https://img.shields.io/github/release/phpcfdi/sat-estado-cfdi-soap?style=flat-square
+[badge-license]: https://img.shields.io/github/license/phpcfdi/sat-estado-cfdi-soap?style=flat-square
+[badge-build]: https://img.shields.io/github/workflow/status/phpcfdi/sat-estado-cfdi-soap/build/main?style=flat-square
+[badge-quality]: https://img.shields.io/scrutinizer/g/phpcfdi/sat-estado-cfdi-soap/main?style=flat-square
+[badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/phpcfdi/sat-estado-cfdi-soap/main?style=flat-square
+[badge-downloads]: https://img.shields.io/packagist/dt/phpcfdi/sat-estado-cfdi-soap?style=flat-square

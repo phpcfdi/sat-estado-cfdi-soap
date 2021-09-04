@@ -76,9 +76,11 @@ class SoapClientFactory
      *
      * @param array<string, mixed> $options
      * @return SoapClient
+     * @noinspection PhpDocMissingThrowsInspection
      */
     protected function createSoapClientWithOptions(array $options): SoapClient
     {
+        /** @noinspection PhpUnhandledExceptionInspection */
         return new SoapClient(null, $options);
     }
 }
