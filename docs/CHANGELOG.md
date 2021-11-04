@@ -11,6 +11,11 @@ versión, aunque sí su incorporación en la rama principal de trabajo. Generalm
 
 ## Listado de cambios
 
+### Version 1.0.2 2021-11-04
+
+- Se actualiza la dependencia `phpcfdi/sat-estado-cfdi:^1.0.2`.
+- Se corrige el nombre del archivo de configuración de PHPStan en los archivos excluidos del paquete de distribución.
+
 ### Version 1.0.1 2021-09-03
 
 - La versión menor de PHP es 7.3.
