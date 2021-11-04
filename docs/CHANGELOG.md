@@ -6,10 +6,15 @@ Usamos [Versionado Semántico 2.0.0](SEMVER.md) por lo que puedes usar esta libr
 
 ## Cambios no liberados en una versión
 
-Pueden aparecer cambios no liberados que se integran a la rama principal pero no ameritan una nueva liberación de
-versión aunque sí su incorporación en la rama principal de trabajo, generalmente se tratan de cambios en el desarrollo.
+Pueden aparecer cambios no liberados que se integran a la rama principal, pero no ameritan una nueva liberación de
+versión, aunque sí su incorporación en la rama principal de trabajo. Generalmente se tratan de cambios en el desarrollo.
 
 ## Listado de cambios
+
+### Version 1.0.2 2021-11-04
+
+- Se actualiza la dependencia `phpcfdi/sat-estado-cfdi:^1.0.2`.
+- Se corrige el nombre del archivo de configuración de PHPStan en los archivos excluidos del paquete de distribución.
 
 ### Version 1.0.1 2021-09-03
 
