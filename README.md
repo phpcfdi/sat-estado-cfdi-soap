@@ -4,8 +4,6 @@
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
-[![Scrutinizer][badge-quality]][quality]
-[![Coverage Status][badge-coverage]][coverage]
 [![Total Downloads][badge-downloads]][downloads]
 
 > Consulta el estado de un CFDI en el webservice del SAT usando SOAP (sin WSDL)
@@ -114,14 +112,10 @@ and licensed for use under the MIT License (MIT). Please see [LICENSE][] for mor
 [release]: https://github.com/phpcfdi/sat-estado-cfdi-soap/releases
 [license]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/main/LICENSE
 [build]: https://github.com/phpcfdi/sat-estado-cfdi-soap/actions/workflows/build.yml?query=branch:main
-[quality]: https://scrutinizer-ci.com/g/phpcfdi/sat-estado-cfdi-soap/
-[coverage]: https://scrutinizer-ci.com/g/phpcfdi/sat-estado-cfdi-soap/code-structure/main/code-coverage
 [downloads]: https://packagist.org/packages/phpcfdi/sat-estado-cfdi-soap
 
 [badge-source]: https://img.shields.io/badge/source-phpcfdi/sat--estado--cfdi--soap-blue?style=flat-square
 [badge-release]: https://img.shields.io/github/release/phpcfdi/sat-estado-cfdi-soap?style=flat-square
 [badge-license]: https://img.shields.io/github/license/phpcfdi/sat-estado-cfdi-soap?style=flat-square
 [badge-build]: https://img.shields.io/github/workflow/status/phpcfdi/sat-estado-cfdi-soap/build/main?style=flat-square
-[badge-quality]: https://img.shields.io/scrutinizer/g/phpcfdi/sat-estado-cfdi-soap/main?style=flat-square
-[badge-coverage]: https://img.shields.io/scrutinizer/coverage/g/phpcfdi/sat-estado-cfdi-soap/main?style=flat-square
 [badge-downloads]: https://img.shields.io/packagist/dt/phpcfdi/sat-estado-cfdi-soap?style=flat-square
