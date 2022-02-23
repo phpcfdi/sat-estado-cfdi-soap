@@ -20,6 +20,7 @@ versión, aunque sí su incorporación en la rama principal de trabajo. Generalm
 - Se actualiza la dependencia de desarrollo `phpcfdi/cfdi-expresiones:^3.0`.
 - Se deja de utilizar Scrutinizer CI. Gracias Scrutinizer CI.
 - El flujo de integración continua se cambia de pasos a trabajos.
+- Se agrega la integración con *sonarcloud*.
 
 ### Version 1.0.2 2021-11-04
 

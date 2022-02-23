@@ -1,9 +1,15 @@
 # phpcfdi/sat-estado-cfdi-soap
 
 [![Source Code][badge-source]][source]
+[![Packagist PHP Version Support][badge-php-version]][php-version]
+[![Discord][badge-discord]][discord]
 [![Latest Version][badge-release]][release]
 [![Software License][badge-license]][license]
 [![Build Status][badge-build]][build]
+[![Reliability][badge-reliability]][reliability]
+[![Maintainability][badge-maintainability]][maintainability]
+[![Code Coverage][badge-coverage]][coverage]
+[![Violations][badge-violations]][violations]
 [![Total Downloads][badge-downloads]][downloads]
 
 > Consulta el estado de un CFDI en el webservice del SAT usando SOAP (sin WSDL)
@@ -109,13 +115,25 @@ and licensed for use under the MIT License (MIT). Please see [LICENSE][] for mor
 [todo]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/main/docs/TODO.md
 
 [source]: https://github.com/phpcfdi/sat-estado-cfdi-soap
+[php-version]: https://packagist.org/packages/phpcfdi/sat-estado-cfdi-soap
+[discord]: https://discord.gg/aFGYXvX
 [release]: https://github.com/phpcfdi/sat-estado-cfdi-soap/releases
 [license]: https://github.com/phpcfdi/sat-estado-cfdi-soap/blob/main/LICENSE
 [build]: https://github.com/phpcfdi/sat-estado-cfdi-soap/actions/workflows/build.yml?query=branch:main
+[reliability]:https://sonarcloud.io/component_measures?id=phpcfdi_sat-estado-cfdi-soap&metric=Reliability
+[maintainability]: https://sonarcloud.io/component_measures?id=phpcfdi_sat-estado-cfdi-soap&metric=Maintainability
+[coverage]: https://sonarcloud.io/component_measures?id=phpcfdi_sat-estado-cfdi-soap&metric=Coverage
+[violations]: https://sonarcloud.io/project/issues?id=phpcfdi_sat-estado-cfdi-soap&resolved=false
 [downloads]: https://packagist.org/packages/phpcfdi/sat-estado-cfdi-soap
 
-[badge-source]: https://img.shields.io/badge/source-phpcfdi/sat--estado--cfdi--soap-blue?style=flat-square
-[badge-release]: https://img.shields.io/github/release/phpcfdi/sat-estado-cfdi-soap?style=flat-square
-[badge-license]: https://img.shields.io/github/license/phpcfdi/sat-estado-cfdi-soap?style=flat-square
-[badge-build]: https://img.shields.io/github/workflow/status/phpcfdi/sat-estado-cfdi-soap/build/main?style=flat-square
-[badge-downloads]: https://img.shields.io/packagist/dt/phpcfdi/sat-estado-cfdi-soap?style=flat-square
+[badge-source]: https://img.shields.io/badge/source-phpcfdi/sat--estado--cfdi--soap-blue?logo=github
+[badge-discord]: https://img.shields.io/discord/459860554090283019?logo=discord
+[badge-php-version]: https://img.shields.io/packagist/php-v/phpcfdi/sat-estado-cfdi-soap?logo=php
+[badge-release]: https://img.shields.io/github/release/phpcfdi/sat-estado-cfdi-soap?logo=git
+[badge-license]: https://img.shields.io/github/license/phpcfdi/sat-estado-cfdi-soap?logo=open-source-initiative
+[badge-build]: https://img.shields.io/github/workflow/status/phpcfdi/sat-estado-cfdi-soap/build/main?logo=github-actions
+[badge-reliability]: https://sonarcloud.io/api/project_badges/measure?project=phpcfdi_sat-estado-cfdi-soap&metric=reliability_rating
+[badge-maintainability]: https://sonarcloud.io/api/project_badges/measure?project=phpcfdi_sat-estado-cfdi-soap&metric=sqale_rating
+[badge-coverage]: https://img.shields.io/sonar/coverage/phpcfdi_sat-estado-cfdi-soap/main?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
+[badge-violations]: https://img.shields.io/sonar/violations/phpcfdi_sat-estado-cfdi-soap/main?format=long&logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io
+[badge-downloads]: https://img.shields.io/packagist/dt/phpcfdi/sat-estado-cfdi-soap?logo=packagist
