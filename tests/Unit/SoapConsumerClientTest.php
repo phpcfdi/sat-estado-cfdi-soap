@@ -11,7 +11,7 @@ use PhpCfdi\SatEstadoCfdi\Soap\SoapClientFactory;
 use PhpCfdi\SatEstadoCfdi\Soap\SoapConsumerClient;
 use PhpCfdi\SatEstadoCfdi\Tests\Soap\SpySoapConsumerClient;
 
-class SoapConsumerClientTest extends TestCase
+final class SoapConsumerClientTest extends TestCase
 {
     public function testConsumerClientCanBeCreatedWithoutArguments(): void
     {

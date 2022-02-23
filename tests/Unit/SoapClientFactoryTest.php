@@ -8,7 +8,7 @@ use PhpCfdi\SatEstadoCfdi\Soap\SoapClientFactory;
 use PhpCfdi\SatEstadoCfdi\Tests\Soap\TestCase;
 use SoapClient;
 
-class SoapClientFactoryTest extends TestCase
+final class SoapClientFactoryTest extends TestCase
 {
     public function testFactoryHasCustomOptions(): void
     {

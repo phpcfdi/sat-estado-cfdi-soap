@@ -8,7 +8,7 @@ use PhpCfdi\SatEstadoCfdi\Soap\SoapConsumerClient;
 use SoapClient;
 use stdClass;
 
-class SpySoapConsumerClient extends SoapConsumerClient
+final class SpySoapConsumerClient extends SoapConsumerClient
 {
     /** @var SoapClient */
     public $lastSoapClient;
