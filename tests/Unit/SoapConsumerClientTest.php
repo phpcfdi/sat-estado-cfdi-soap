@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace PhpCfdi\SatEstadoCfdi\Tests\Soap\Unit;
 
-use SoapClient;
-use PHPUnit\Framework\MockObject\MockObject;
-use PhpCfdi\SatEstadoCfdi\Tests\Soap\TestCase;
 use PhpCfdi\SatEstadoCfdi\Soap\SoapClientFactory;
 use PhpCfdi\SatEstadoCfdi\Soap\SoapConsumerClient;
 use PhpCfdi\SatEstadoCfdi\Tests\Soap\SpySoapConsumerClient;
+use PhpCfdi\SatEstadoCfdi\Tests\Soap\TestCase;
+use PHPUnit\Framework\MockObject\MockObject;
+use SoapClient;
 
 final class SoapConsumerClientTest extends TestCase
 {
