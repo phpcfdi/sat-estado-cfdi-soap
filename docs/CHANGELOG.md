@@ -4,10 +4,11 @@
 
 Usamos [Versionado Semántico 2.0.0](SEMVER.md) por lo que puedes usar esta librería sin temor a romper tu aplicación.
 
-## Cambios no liberados en una versión
+## Proyecto archivado
 
-Pueden aparecer cambios no liberados que se integran a la rama principal, pero no ameritan una nueva liberación de
-versión, aunque sí su incorporación en la rama principal de trabajo. Generalmente, se tratan de cambios en el desarrollo.
+Este proyecto ha sido archivado en favor de [`phpcfdi/sat-estado-cfdi`](`https://github.com/phpcfdi/sat-estado-cfdi`) versión 2.
+Las características de este proyecto han sido integradas en `phpcfdi/sat-estado-cfdi`, por lo tanto, este proyecto no es mantenido a partir de 2024-03-06.
+Si implementaste la versión 1 de `phpcfdi/sat-estado-cfdi` y `phpcfdi/sat-estado-cfdi-soap` entonces puedes seguir la guía de actualización en <https://github.com/phpcfdi/sat-estado-cfdi/blob/main/docs/UPGRADE_v1_v2.md> para actualizar tu código.
 
 ### Mantenimiento 2023-02-27
 

@@ -1,9 +1,5 @@
 # phpcfdi/sat-estado-cfdi-soap Lista de tareas pendientes
 
-## Pendientes
-
-Incrementar la versión mínima de PHP a 7.4.
-
 ## Hechas
 
 ### Primera versión estable
